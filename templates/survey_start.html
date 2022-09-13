@@ -1,0 +1,17 @@
+{% extends 'base.html' %} 
+{% block title %} Rocket Surveys {% endblock %} 
+
+{% block content %}
+
+<h3>{{survey.instructions}}</h3>
+<h3>Select a survey:</h3>
+
+<form action="/begin" method="POST">
+    <button>Start {{survey.title}}</button>
+</form>
+
+{% endblock %}
+
+
+
+
