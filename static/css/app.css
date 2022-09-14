@@ -1,0 +1,58 @@
+body {
+    background-color:rgb(215, 202, 181);
+    color: white;
+}
+
+nav {
+    color: white;
+    background-color: cadetblue;
+    padding: 10px 10px 10px 0;
+    /* text-decoration: none; */
+    /* overflow: hidden; */
+    float: none;
+}
+
+/* #navbar {
+    background-color: rgb(147, 142, 142);
+    overflow: hidden;
+    float: none;
+    text-align: left;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 17px;
+} */
+
+nav span {
+    padding-left: 10px;
+}
+
+a {
+    margin-left: 10px;
+    color: white;
+    font-weight: 100;
+}
+
+a:hover {
+    color: black;
+}
+
+h2  {
+    margin-left: 10px; 
+}
+
+button {
+    background-color: cadetblue;
+    /* border-style: double; */
+    border: double white 5px;
+    color: white;
+}
+
+button:hover {
+    color: black;
+    border: double black 5px;
+
+}
+
+.category {
+    color: tomato;
+}

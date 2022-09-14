@@ -32,16 +32,13 @@ def start_survey():
 def handle_question():
     """Save response and redirect to next question."""
 
-    # get the response choice
     choice = request.form['answer']
 
-    # add this response to the session
     responses = session[RESPONSES_KEY]
     responses.append(choice)
     session[RESPONSES_KEY] = responses
 
     if (len(responses) == len(survey.questions)):
-        # They've answered all the questions! Thank them.
         return redirect("/complete")
 
     else:

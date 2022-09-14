@@ -4,6 +4,12 @@
 
 {% block content %}
 
+<section class="messages">
+  {% for category,msg in get_flashed_messages(with_categories=true) %}
+      <p class="category">{{msg}}</p>
+  {% endfor %}
+</section>
+
 <h3>{{survey.title}}</h3>
 <p>{{question.question}}</p>
     
